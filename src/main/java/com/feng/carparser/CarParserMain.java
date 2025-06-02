@@ -191,7 +191,7 @@ public class CarParserMain {
     private static void printUsage() {
         System.out.println("""
 Usage:
-  java -jar CarParser-1.0.0-SNAPSHOT-fat.jar [options]
+  java -jar CarParser-1.0.0-SNAPSHOT-jar-with-dependencies.jar [options]
 
 Required:
   --input-xml=FILE         [REQUIRED] Specify the input car XML file
@@ -213,9 +213,9 @@ Output:
   --output=FORMAT          Output format: table | json | xml
 
 Examples:
-  java -jar CarParser-1.0.0-SNAPSHOT-fat.jar --input-xml=CarTypes.xml --input-csv=BrandDate.csv --brand=Toyota --after=2023-01-01 --sort=price --output=table
+  java -jar CarParser-1.0.0-SNAPSHOT-jar-with-dependencies.jar --input-xml=CarTypes.xml --input-csv=BrandDate.csv --brand=Toyota --after=2023-01-01 --sort=price --output=table
 
-  java -jar CarParser-1.0.0-SNAPSHOT-fat.jar --input-xml=CarTypes.xml --input-csv=BrandDate.csv --sort=optional --type=SUV --currency=USD --output=xml
+  java -jar CarParser-1.0.0-SNAPSHOT-jar-with-dependencies.jar --input-xml=CarTypes.xml --input-csv=BrandDate.csv --sort=optional --type=SUV --currency=USD --output=xml
 """);
     }
 }
